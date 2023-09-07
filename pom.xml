@@ -11,21 +11,6 @@
 
   <name>z2huo-java-parent</name>
 
-  <repositories>
-
-    <repository>
-      <id>central</id>
-      <url>https://maven.aliyun.com/repository/central</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-
-  </repositories>
-
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -203,5 +188,20 @@
 
     </dependencies>
   </dependencyManagement>
+
+  <repositories>
+
+    <repository>
+      <id>central</id>
+      <url>https://maven.aliyun.com/repository/central</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+
+  </repositories>
 
 </project>
