@@ -25,6 +25,7 @@
     <slf4j.version>2.0.7</slf4j.version>
     <log4j.version>2.20.0</log4j.version>
     <lombok.version>1.18.28</lombok.version>
+    <logback.version>1.4.11</logback.version>
 
     <commons-lang3.version>3.12.0</commons-lang3.version>
     <commons-beanutils.version>1.9.4</commons-beanutils.version>
@@ -68,11 +69,28 @@
         <version>${log4j.version}</version>
       </dependency>
 
+      <!-- 其中包括了 slf4j -->
       <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j2-impl</artifactId>
         <version>${log4j.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+
+      <!-- 其中包括了 slf4j -->
+      <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+        <scope>test</scope>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
